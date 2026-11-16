@@ -15,8 +15,8 @@ def create_app(config=None):
 
     # Mostra a página inicial
     @app.route("/", methods=["GET"])
-    def inicio():
-        return render_template("index.html")
+   def inicio():
+       return render_template("index.html")
 
     # Verifica se o servidor está funcionando
     @app.route("/health", methods=["GET"])
